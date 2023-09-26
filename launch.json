@@ -1,8 +1,15 @@
 {
+    "rewrites": [
+        {
+            "source": "/:path((?!platform-overview|pricing|_next|forms2).+)",
+            "destination": "https://live-salesloft-v2.pantheonsite.io/:path"
+        }
+    ],
     "redirects": [
         {
-            "source": "/blog/:path",
-            "destination": "/news/:path"
+            "source": "^/:path((?!.*\\?).*[^\/]$)",
+            "destination": "/:path/",
+            "statusCode": 301
         }
     ]
 }

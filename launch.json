@@ -1,13 +1,13 @@
 {
      "redirects": [
         {
-            "source": "/:path((?!.*\\?).*[^\/]$)",
+            "source": "/:path((?!platform-overview|pricing|_next|forms2|.*\\.|.*\\?).+[^\\/]$)",
             "destination": "/:path/"          
         }
     ],
      "rewrites": [
         {
-            "source": "/:path((?!platform-overview|pricing|_next|forms2).+)",
+            "source": "/:path((?!platform-overview|pricing|_next|forms2).+)";
             "destination": "https://live-salesloft-v2.pantheonsite.io/:path"
         }
     ]

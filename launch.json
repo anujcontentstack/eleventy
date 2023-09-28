@@ -2,7 +2,12 @@
      "redirects": [
         {
             "source": "/:path((?!platform-overview|pricing|_next|forms2|.*\\.|.*\\?).+[^\\/]$)",
-            "destination": "/:path/"          
+            "destination": "/:path/"
+        },
+        {
+            "source": "/test/:path((?!excluded-uri).+)\\?posts=:search(.+)",
+            "destination": "/:path/:search",
+            "statusCode": 301
         }
     ],
      "rewrites": [

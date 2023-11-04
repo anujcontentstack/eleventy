@@ -7,14 +7,6 @@ export default function handler(req, res) {
   console.log(JSON.stringify(req.headers));
   console.log(JSON.stringify(req));
 
-  if (process.env.TEST_VARIABLE !== 'TEST_VALUE') {
-    throw new Error('Env variable not present');
-  }
-
-  if (!req.headers.cookie.contains(cookieName)) {
-    throw new Error('Cookie not present');
-  }
-
   res
     .status(200)
     .setHeader(

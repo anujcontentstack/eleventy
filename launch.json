@@ -9,10 +9,6 @@
          "destination": "/:path/:search",
          "statusCode": 301
      },
-     {
-         "source": "/rd/wildcard/*",
-         "destination": "/api/*"
-     }
  ],
   "rewrites": [
      {

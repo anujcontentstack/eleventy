@@ -7,6 +7,7 @@ export default function handler(req, res) {
   console.log(JSON.stringify(req.headers));
   console.log(JSON.stringify(req));
 
+  
   res
     .status(200)
     .setHeader(
